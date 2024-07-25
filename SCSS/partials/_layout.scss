@@ -1,0 +1,28 @@
+// HERO IMAGE SECTION
+
+#heroSection{
+    height: 100vh;
+    position: relative;
+}
+
+#heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#heroMainText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+#heroFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
