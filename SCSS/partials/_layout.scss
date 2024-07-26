@@ -1,3 +1,13 @@
+// GLOBAL
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:black;
+} 
+
 // HERO IMAGE SECTION
 
 #heroSection{
@@ -18,6 +28,8 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 #heroFooter {
@@ -25,4 +37,55 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
+}
+
+
+// PROJECTS SECTION
+
+#projectsSection {
+    padding-top: 15%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: $secondaryColor;
+}
+
+#projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 120px;
+}
+
+.projectItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    height: 1000px;
+    border-radius: 20px;
+    background-color: $primaryColor;
+}
+
+.projectTopSection {
+    display: flex;
+    justify-content: center;
+    height: 70%;
+}
+
+.projectBottomSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+    padding-left: 2%;
+    gap: 20px;
+
+}
+
+.projectFooter {
+    display: flex;
+    align-items: flex-start;
+    gap: 4%;
 }
