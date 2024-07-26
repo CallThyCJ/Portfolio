@@ -8,8 +8,12 @@
     height: 100%;
 }
 
-#heroMainText h1{
+#firstName {
     margin-top: auto;
+}
+
+#lastName {
+    margin-top: 5px;
 }
 
 #heroMainText h2{
@@ -29,4 +33,35 @@
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+// CONTACTS SECTION
+
+input {
+    height: 140px;
+    width: 800px;
+    background-color: transparent;
+    padding-left: 15px;
+    border-color: $tertiaryColor;
+    border-radius: 15px;
+    border-width: 4px;
+}
+
+#messageBox {
+    height: 600px;
+    width: 800px;
+    padding-left: 15px;
+    background-color: transparent;
+    border-color: $tertiaryColor;
+    border-radius: 15px;
+    border-width: 4px;
+}
+
+#formSubmit {
+    height: 100px;
+    width: 300px;
+}
+
+#backToTop h4 {
+    margin-top: 10px;
 }

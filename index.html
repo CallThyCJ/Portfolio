@@ -21,7 +21,8 @@
                 <img src="Assets/heroImage.png" alt="laptop on desk image" id="heroImage">
 
                     <div id="heroMainText">
-                        <h1>Célestin Jacobs</h1>
+                        <h1 id="firstName">Célestin</h1>
+                        <h1 id="lastName">Jacobs</h1>
                         <h2>Web Developer</h2>
                         <h4>Scroll Down</h4>
                         <i class="fa-solid fa-angle-down fa-4x" id="arrowDown"></i>
@@ -161,27 +162,41 @@
 
     <div id="contactLeftSection">
 
-        <div id="contactPara1">
-
+        <div id="contactPara1">  
+            <h2>Get In Touch</h2>
+            <p>Kindly reach out to me using the contact methods found here.</p>
         </div>
 
         <div id="contactPara2">
-
+            <h3>07484337778</h3>
+            <h3>celestinjacobss@gmail.com</h3>
+            <p>Any emails or voice mesasages will be responded to within a maximum of 24 hours. I look forward to hearing from you.</p>
         </div>
         
     </div>
 
     <div id="contactRightSection">
-        
-        <div id="contactForm">
 
-        </div>
+            <form id="contactForm">
+                <div id="formRow">
+                    <input type="text" placeholder="First Name*">
+                    <input type="text" placeholder="Last Name*">
+                </div>
+
+                <div id="formColumn">
+                    <input type="text" placeholder="Email Address*">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="message" id="messageBox" placeholder="Message"></textarea>
+                    <button id="formSubmit">Submit</button>
+                </div>
+            </form>    
 
     </div>
 
-</div>
-
-<div id="backToTop">
+    <div id="backToTop">
+        <i class="fa-solid fa-angle-up fa-4x" id="arrowUp"></i>
+        <h4>Back To Top</h4>
+    </div>
 
 </div>
 

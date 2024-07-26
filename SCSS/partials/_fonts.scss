@@ -3,11 +3,11 @@
 // HERO IMAGE SECTION
 
 #heroMainText h1{
-    font-size: 8rem;
+    font-size: 12rem;
 }
 
 #heroMainText h2{
-    font-size: 5.5rem;
+    font-size: 7rem;
 }
 
 #heroMainText h4 {
@@ -25,4 +25,34 @@
 .projectBottomSection h4 {
     font-size: 2.5rem;
     margin-top: 3%;
+}
+
+//CONTACT SECTION
+
+#contactPara1 h2 {
+    font-size: 9.5rem;
+}
+
+#contactPara1 p, #contactPara2 p {
+    font-size: 4rem;
+}
+
+#contactPara2 h3 {
+    font-size: 4.7rem;
+}
+
+input {
+    font-size: 4rem;
+}
+
+#messageBox {
+    font-size: 4rem;
+}
+
+#formSubmit {
+    font-size: 2.6rem;
+}
+
+#backToTop h4 {
+    font-size: 2.5rem;
 }
