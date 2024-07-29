@@ -36,6 +36,10 @@
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    @include mq("xl") {
+        min-height: 217.64px;
+    }
 }
 
 .arrowRight {

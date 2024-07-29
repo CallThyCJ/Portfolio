@@ -141,6 +141,11 @@ a:visited {
         width: 240px;
         height: 280px;
     }
+
+    @include mq("xl") {
+        width: 32%;
+        height: 45%;
+    }
 }
 
 .projectItem:nth-child(2n) {
