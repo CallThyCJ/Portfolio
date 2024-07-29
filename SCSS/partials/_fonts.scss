@@ -20,6 +20,17 @@
     font-size: 2rem;
 }
 
+// SIDEBAR
+
+#sNavBarTopSection {
+    font-size: 2.5rem;
+}
+
+#sNavBarBottomSection {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 //PROJECTS SECTION
 
 #portfolioTitle {
@@ -33,6 +44,9 @@
     @include mq("m") {
         font-size: 1.5rem;
     }
+    @include mq("l") {
+        font-size: 1.3rem;
+    }
 }
 
 .projectBottomSection h4 {
@@ -41,6 +55,10 @@
     @include mq("m") {
         font-size: 1.2rem;
         margin-top: 0px;
+    }
+    @include mq("l") {
+        font-size: 1rem;
+        margin-top: -5px;
     }
 }
 
@@ -84,6 +102,16 @@ input {
 
 #heroSection {
     color: $primaryTextColor;
+}
+
+//  SIDEBAR SECTION
+
+#sideNavBarSection {
+    color: white;
+}
+
+#sideNavBarSection a:visited {
+    color: white;
 }
 
 // PROJECT SECTION

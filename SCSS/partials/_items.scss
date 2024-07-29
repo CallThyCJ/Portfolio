@@ -42,6 +42,11 @@
     @include mq("m") {
         font-size: 1.3rem;
     }
+
+    @include mq("l") {
+        font-size: 1.1rem;
+        margin-top: -5px;
+    }
 }
 
 // CONTACTS SECTION
