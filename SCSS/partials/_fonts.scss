@@ -66,26 +66,44 @@
 
 #contactPara1 h2 {
     font-size: 3.85rem;
+    @include mq("l") { 
+        font-size: 3.2rem;
+    }
 }
 
 #contactPara1 p, #contactPara2 p {
     font-size: 1.5rem;
+    @include mq("l") { 
+        font-size: 1.3rem;
+    }
 }
 
 #contactPara2 h3 {
     font-size: 1.7rem;
+    @include mq("l") { 
+        font-size: 1.4rem;
+    }
 }
 
 #contactPara2 #myNumber {
     font-size: 2.5rem;
+    @include mq("l") { 
+        font-size: 2.3rem;
+    }
 }
 
 input {
     font-size: 2.7rem;
+    @include mq("l") { 
+        font-size: 1.8rem;
+    }
 }
 
 #messageBox {
     font-size: 2.7rem;
+    @include mq("l") { 
+        font-size: 1.8rem;
+    }
 }
 
 #formSubmit {

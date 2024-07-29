@@ -182,13 +182,35 @@ a:visited {
         }
 }
 
+#contactContainer {
+    @include mq("l") {
+        display: flex;
+    }
+}
+
 #contactLeftSection, #contactPara1, #contactPara2, #contactRightSection {
     display: flex;
     flex-direction: column;
 }
 
+#contactLeftSection {
+    @include mq("l") {
+        width: 40%;
+    }
+}
+
+#contactRightSection {
+    @include mq("l") {
+        width: 60%;
+        padding-top: 170px;
+    }
+}
+
 #contactPara2 {
     margin-bottom: 10%;
+    @include mq("l") {
+        padding-right: 5%;
+    }
 }
 
 #contactForm {

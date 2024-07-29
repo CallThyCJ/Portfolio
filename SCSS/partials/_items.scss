@@ -51,6 +51,14 @@
 
 // CONTACTS SECTION
 
+#contactTitle {
+    margin-top: 6%;
+}
+
+#contactPara1 p {
+    margin-top: 13%;
+}
+
 input {
     height: 110px;
     width: 310px;
@@ -66,6 +74,10 @@ input {
 
 #formRow input {
     width: 310px;
+    @include mq("l") {
+        width: 45%;
+        height: 100px;
+    }
 }
 
 #messageBox {
