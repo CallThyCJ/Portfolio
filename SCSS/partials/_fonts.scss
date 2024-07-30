@@ -114,6 +114,45 @@ input {
     font-size: 1.5rem;
 }
 
+// ABOUT ME SECTION
+
+#aboutMeContainer h2 {
+    @include mq("l") { 
+        font-size: 2.5rem;
+    }
+}
+
+#aboutMeContainer p {
+    @include mq("l") { 
+        font-size: 1.4rem;
+    }
+}
+
+// CODING EXAMPLES SECTION
+
+#codeExamplesContainer h2 {
+    @include mq("l") { 
+        font-size: 2.5rem;
+    }
+}
+
+// SCS SECTION
+
+#scsSection h2 {
+    font-size: 2rem;
+
+    @include mq("l") { 
+        font-size: 2.5rem;
+    }
+}
+
+#scsSection h3 {
+    @include mq("l") { 
+        font-size: 1.5rem;
+    }
+}
+
+
 //FONT COLORS
 
 // HERO IMAGE SECTION
@@ -134,6 +173,6 @@ input {
 
 // PROJECT SECTION
 
-#portfolioTitle {
+#portfolioTitle, .projectItem, .projectItem a {
     color: white;
 }
