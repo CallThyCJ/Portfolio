@@ -130,15 +130,12 @@ input {
 // ABOUT ME SECTION
 
 #aboutMeContainer h2 {
-    @include mq("l") { 
-        font-size: 2.5rem;
-    }
+    font-size: 2.5rem;
 }
 
 #aboutMeContainer p {
-    @include mq("l") { 
         font-size: 1.4rem;
-    }
+
 }
 
 // CODING EXAMPLES SECTION
@@ -160,8 +157,18 @@ input {
 }
 
 #scsSection h3 {
+    font-size: 1.5rem;
+
     @include mq("l") { 
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+#scsSection p {
+    font-size: 1.3rem;
+
+    @include mq("l") { 
+        font-size: 1.8rem;
     }
 }
 
@@ -193,5 +200,25 @@ input {
 // CONTACT SECTION
 
 #contactSection {
+    color: white;
+}
+
+#contactSection input, #contactSection textarea {
+    color: white;
+}
+
+// ABOUT ME SECTION
+
+#aboutMeSection {
+    color: white;
+}
+
+// CODE EXAMPLES SECTION
+
+#codeExamplesSection {
+    color: white;
+}
+
+#scsSection {
     color: white;
 }

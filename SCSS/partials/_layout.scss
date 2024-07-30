@@ -301,6 +301,14 @@ a:visited {
     gap: 60px;
 }
 
+#aboutMeUnderline {
+    width: 200px;
+    margin-top: -70px;
+    @include mq("l") {
+        width: 19%;
+    }
+}
+
 // CODING EXAMPLES SECTION
 
 #codeExamplesSection {
