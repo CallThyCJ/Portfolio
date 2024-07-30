@@ -97,7 +97,7 @@
 }
 
 input {
-    height: 110px;
+    height: 60px;
     width: 310px;
     background-color: transparent;
     padding-left: 15px;
@@ -107,10 +107,17 @@ input {
     @include mq("m") {
         width: 94%;
     }
+
+    @include mq("l") {
+        height: 100px;
+    }
 }
 
 #formRow input {
     width: 310px;
+    @include mq("m") {
+        width: 44%;
+    }
     @include mq("l") {
         width: 45%;
         height: 100px;
@@ -118,7 +125,7 @@ input {
 }
 
 #messageBox {
-    height: 500px;
+    height: 300px;
     width: 310px;
     padding-left: 15px;
     background-color: transparent;
@@ -128,11 +135,17 @@ input {
     @include mq("m") {
         width: 94%;
     }
+    @include mq("l") {
+        height: 600px;
+    }
 }
 
 #formSubmit {
     height: 50px;
     width: 140px;
+    background-color: $primaryColor;
+    border: solid 3px $tertiaryColor;
+    border-radius: 8px;
 }
 
 #backToTop h4 {
