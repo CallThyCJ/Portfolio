@@ -26,9 +26,22 @@
     font-size: 2.5rem;
 }
 
+#sNavBarTopSection a:hover {
+    font-size: 3rem;
+}
+
+#sNavBarMidSection a:hover {
+    font-size: 1.67rem;
+}
+
+
 #sNavBarBottomSection {
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+#sNavBarBottomSection a:hover {
+    font-size: 1.8rem;
 }
 
 //PROJECTS SECTION
@@ -174,5 +187,11 @@ input {
 // PROJECT SECTION
 
 #portfolioTitle, .projectItem, .projectItem a {
+    color: white;
+}
+
+// CONTACT SECTION
+
+#contactSection {
     color: white;
 }

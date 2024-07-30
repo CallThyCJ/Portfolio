@@ -29,6 +29,12 @@
 
 // PROJECTS SECTION
 
+#portfolioTitle h2 {
+    @include mq("l") {
+    margin-bottom: 40px;
+    }
+}
+
 .projectTopSection img {
     height: 100%;
     width: 100%;
@@ -51,6 +57,34 @@
         margin-top: -5px;
     }
 }
+
+// SIDEBAR SECTION
+
+#sNavBarMidSection a h3{
+    margin: 0px;
+    padding-top: 18.720px;
+    padding-bottom: 18.720px;
+}
+
+#sidebarUnderline {
+    height: 0px;
+    border: 0px;
+}
+
+#sNavBarMidSection a:hover, #sNavBarBottomSection a:hover {
+    #sidebarUnderline {
+        border: solid 3px #C4ADA6;
+        width: 100%;
+        margin-top: -10px;
+    }
+}
+
+.lastNavItem:hover {
+    #sidebarUnderline {
+        margin-bottom: 30px;
+    }
+}
+
 
 // CONTACTS SECTION
 
@@ -104,6 +138,7 @@ input {
 #backToTop h4 {
     margin-top: 10px;
 }
+
 
 // ABOUT ME SECTION
 

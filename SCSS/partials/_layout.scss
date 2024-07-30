@@ -44,6 +44,14 @@ a:visited {
     z-index: 1;
 }
 
+.underline {
+    border: solid 4px $primaryColor;
+    width: 80%;
+    @include mq("l") {
+        width: 100%;
+    }
+}
+
 
 // SIDEBAR SECTION
 
@@ -101,6 +109,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     gap: 120px;
@@ -118,12 +127,21 @@ a:visited {
 
 #portfolioTitle {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: -50px;
     margin-bottom: 25%;
 
     @include mq("m") {
         margin-bottom: 10%;
+    }
+}
+
+#portfolioUnderline {
+    max-height: 0px;
+    @include mq("l") {
+        width: 60%;
     }
 }
 
@@ -213,6 +231,7 @@ a:visited {
     @include mq("l") {
         width: 60%;
         padding-top: 170px;
+        margin-left: 20px;
     }
 }
 
