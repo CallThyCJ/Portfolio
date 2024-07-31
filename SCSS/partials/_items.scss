@@ -96,6 +96,14 @@
     margin-top: 13%;
 }
 
+#contactPara2 a:hover {
+    #sidebarUnderline {
+        border: solid 3px #C4ADA6;
+        width: 100%;
+        margin-top: -10px;
+    }
+}
+
 input {
     height: 60px;
     width: 310px;
