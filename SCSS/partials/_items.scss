@@ -96,11 +96,12 @@
     margin-top: 13%;
 }
 
-#contactPara2 a:hover {
-    #sidebarUnderline {
-        border: solid 3px #C4ADA6;
-        width: 100%;
-        margin-top: -10px;
+#contactPara2 a.contactInfo:hover + #sidebarUnderline {
+    border: solid 3px #C4ADA6;
+    width: 430px;
+    margin-top: -10px;
+    @include mq("l") {
+        width: 320px;
     }
 }
 

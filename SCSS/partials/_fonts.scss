@@ -105,6 +105,13 @@
     }
 }
 
+#contactPara2 a.contactInfo:hover h3 {
+    font-size: 2rem;
+    @include mq("l") { 
+        font-size: 1.6rem;
+    }
+}
+
 input {
     font-size: 2.7rem;
     @include mq("l") { 
