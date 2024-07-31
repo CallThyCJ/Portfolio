@@ -149,11 +149,14 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 350px;
-    height: 450px;
     border-radius: 20px;
     background-image: linear-gradient($primaryColor, $tertiaryColor);
     transition: .5s ease;
+
+    @include mq("s") {
+        min-width: 200px;
+        min-height: 250px;
+    }
 
     @include mq("m") {
         width: 330px;

@@ -48,6 +48,9 @@
 }
 
 .arrowRight {
+    @include mq("s") {
+        font-size: 0.9rem;
+    }
     @include mq("m") {
         font-size: 1.3rem;
     }
