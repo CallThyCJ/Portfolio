@@ -98,8 +98,12 @@
 
 #contactPara2 a.contactInfo:hover + #sidebarUnderline {
     border: solid 3px #C4ADA6;
-    width: 430px;
+    width: 100%;
+    max-width: 400px;
     margin-top: -10px;
+    @include mq("m") {
+        max-width: 400px;
+    }
     @include mq("l") {
         width: 320px;
     }
