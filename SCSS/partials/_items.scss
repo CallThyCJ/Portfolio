@@ -27,6 +27,17 @@
     margin-top: auto;
 }
 
+
+// BURGER MENU SECTION
+
+#burgerButton {
+    min-width: 70px;
+    min-height: 60px;
+    background-color: $quaternaryColor;
+    border: solid 2px $tertiaryColor;
+    border-radius: 6px;
+}
+
 // PROJECTS SECTION
 
 #portfolioTitle h2 {
@@ -41,6 +52,10 @@
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    @include mq("s") {
+        min-width: 0px;
+        min-height: 0px;
+    }
 
     @include mq("xl") {
         min-height: 217.64px;
@@ -120,6 +135,9 @@ input {
     border-color: $tertiaryColor;
     border-radius: 15px;
     border-width: 4px;
+    @include mq("s") {
+        width: 80%;
+    }
     @include mq("m") {
         width: 94%;
     }
@@ -131,6 +149,9 @@ input {
 
 #formRow input {
     width: 310px;
+    @include mq("s") {
+        width: 80%;
+    }
     @include mq("m") {
         width: 44%;
     }
@@ -148,6 +169,9 @@ input {
     border-color: $tertiaryColor;
     border-radius: 15px;
     border-width: 4px;
+    @include mq("s") {
+        width: 80%;
+    }
     @include mq("m") {
         width: 94%;
     }

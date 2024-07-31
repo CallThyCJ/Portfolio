@@ -52,6 +52,24 @@ a:visited {
     }
 }
 
+// BURGER MENU SECTION
+
+#burgerMenuSection {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    @include mq("l") {
+        display: none;
+    }
+}
+
+#burgerMenu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+    margin-top: 3%;
+}
 
 // SIDEBAR SECTION
 
@@ -152,12 +170,6 @@ a:visited {
     border-radius: 20px;
     background-image: linear-gradient($primaryColor, $tertiaryColor);
     transition: .5s ease;
-
-    @include mq("s") {
-        min-width: 200px;
-        min-height: 250px;
-    }
-
     @include mq("m") {
         width: 330px;
         height: 380px;

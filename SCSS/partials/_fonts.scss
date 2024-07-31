@@ -10,6 +10,9 @@
 
 #heroMainText h1{
     font-size: 6rem;
+    @include mq("s") {
+        font-size: 4.5rem;
+    }
 }
 
 #heroMainText h2{
@@ -51,6 +54,9 @@
 
 #portfolioTitle {
     font-size: 2.5rem;
+    @include mq("s") {
+        font-size: 2.1rem;
+    }
 }
 
 .projectBottomSection h3 {
@@ -126,6 +132,10 @@
 
 input {
     font-size: 2.7rem;
+    @include mq("s") { 
+        font-size: 1.4rem;
+    }
+
     @include mq("l") { 
         font-size: 1.8rem;
     }
@@ -133,6 +143,9 @@ input {
 
 #messageBox {
     font-size: 2.7rem;
+    @include mq("s") { 
+        font-size: 1.4rem;
+    }
     @include mq("l") { 
         font-size: 1.8rem;
     }
@@ -208,6 +221,12 @@ a:visited {
 
 #heroSection {
     color: $primaryTextColor;
+}
+
+// BURGER MENU SECTION 
+
+#menuBars {
+    color: $primaryColor;
 }
 
 //  SIDEBAR SECTION
