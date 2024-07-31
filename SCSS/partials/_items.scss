@@ -74,6 +74,10 @@
         font-size: 1.1rem;
         margin-top: -5px;
     }
+    @include mq("xl") {
+        font-size: 1.9rem;
+        margin-top: 9px;
+    }
 }
 
 // SIDEBAR SECTION

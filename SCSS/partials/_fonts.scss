@@ -13,6 +13,9 @@
     @include mq("s") {
         font-size: 4.5rem;
     }
+    @include mq("xl") {
+        font-size: 9rem;
+    }
 }
 
 #heroMainText h2{
@@ -20,6 +23,9 @@
         font-size: 2.5rem;
     }
     font-size: 3.4rem;
+    @include mq("xl") {
+        font-size: 6rem;
+    }
 }
 
 #heroMainText h4 {
@@ -30,24 +36,45 @@
 
 #sNavBarTopSection {
     font-size: 2.5rem;
+    @include mq("xl") {
+        font-size: 3.5rem;
+    }
 }
 
 #sNavBarTopSection a:hover {
     font-size: 3rem;
+    @include mq("xl") {
+        font-size: 4rem;
+    }
+}
+
+#sNavBarMidSection {
+    @include mq("xl") {
+        font-size: 1.1rem;
+    }
 }
 
 #sNavBarMidSection a:hover {
     font-size: 1.67rem;
+    @include mq("xl") {
+        font-size: 1.3rem;
+    }
 }
 
 
 #sNavBarBottomSection {
     font-size: 1.3rem;
     font-weight: bold;
+    @include mq("xl") {
+        font-size: 1.4rem;
+    }
 }
 
 #sNavBarBottomSection a:hover {
     font-size: 1.8rem;
+    @include mq("xl") {
+        font-size: 1.7rem;
+    }
 }
 
 //PROJECTS SECTION
@@ -56,6 +83,9 @@
     font-size: 2.5rem;
     @include mq("s") {
         font-size: 2.1rem;
+    }
+    @include mq("xl") {
+        font-size: 4rem;
     }
 }
 
@@ -71,6 +101,9 @@
     }
     @include mq("l") {
         font-size: 1.3rem;
+    }
+    @include mq("xl") {
+        font-size: 2.2rem;
     }
 }
 
@@ -88,6 +121,11 @@
         font-size: 1rem;
         margin-top: -5px;
     }
+    @include mq("xl") {
+        font-size: 1.7rem;
+        margin-top: 6%;
+        margin-bottom: 5%;
+    }
 }
 
 //CONTACT SECTION
@@ -97,12 +135,18 @@
     @include mq("l") { 
         font-size: 3.2rem;
     }
+    @include mq("xl") {
+        font-size: 4rem;
+    }
 }
 
 #contactPara1 p, #contactPara2 p {
     font-size: 1.5rem;
     @include mq("l") { 
         font-size: 1.3rem;
+    }
+    @include mq("xl") {
+        font-size: 1.7rem;
     }
 }
 
@@ -114,6 +158,9 @@
     @include mq("l") { 
         font-size: 1.4rem;
     }
+    @include mq("xl") {
+        font-size: 2rem;
+    }
 }
 
 #contactPara2 #myNumber {
@@ -121,12 +168,18 @@
     @include mq("l") { 
         font-size: 2.3rem;
     }
+    @include mq("xl") {
+        font-size: 2rem;
+    }
 }
 
 #contactPara2 a.contactInfo:hover h3 {
     font-size: 1.8rem;
     @include mq("l") { 
         font-size: 1.6rem;
+    }
+    @include mq("xl") {
+        font-size: 2.1rem;
     }
 }
 

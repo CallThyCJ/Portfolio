@@ -154,6 +154,10 @@ a:visited {
     @include mq("m") {
         margin-bottom: 10%;
     }
+
+    @include mq("xl") {
+        margin-top: -140px;
+    }
 }
 
 #portfolioUnderline {
