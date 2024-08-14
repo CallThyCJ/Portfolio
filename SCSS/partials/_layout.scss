@@ -52,10 +52,6 @@ a:visited {
     }
 }
 
-// .htmlText {
-//     display: none;
-// }
-
 // BURGER MENU SECTION
 
 #burgerMenuSection {
@@ -73,6 +69,43 @@ a:visited {
     justify-content: flex-end;
     margin-right: 3%;
     margin-top: 3%;
+}
+
+#mobileNavBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 4;
+    background-color: $primaryColor;
+    gap: 50px;
+    transition: 0.4s;
+
+    // visibility: hidden;
+    // opacity: 0;
+    // transition: visibility 0s, opacity 0.3s linear;
+}
+
+#mobileBurgerButton {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    left: 100%;
+    background-color: transparent;
+    border: none;
+    transition: 0.4s;
+}
+
+#mobileNavBar.isActive {
+    left: 0;
+    #mobileBurgerButton {
+        left: 258px;
+    }
 }
 
 // SIDEBAR SECTION
