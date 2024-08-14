@@ -23,6 +23,19 @@
     margin-top: 3%;
 }
 
+#cursor {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+}
+
 #heroMainText h4 {
     margin-top: auto;
 }
