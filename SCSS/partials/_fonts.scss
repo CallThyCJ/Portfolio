@@ -9,9 +9,14 @@
 // HERO IMAGE SECTION
 
 #heroMainText h1{
-    font-size: 6rem;
     @include mq("s") {
         font-size: 4.5rem;
+    }
+    @include mq("m") {
+        font-size: 7rem;
+    }
+    @include mq("l") {
+        font-size: 8.2em;
     }
     @include mq("xl") {
         font-size: 9rem;
@@ -22,9 +27,27 @@
     @include mq("s") {
         font-size: 2.5rem;
     }
-    font-size: 3.4rem;
+    @include mq("m") {
+        font-size: 4rem;
+    }
+    @include mq("l") {
+        font-size: 4.5rem;
+    }
     @include mq("xl") {
-        font-size: 6rem;
+        font-size: 5.5rem;
+    }
+}
+
+#heroMainText .jsText {
+    font-size: 1.85rem;
+    @include mq("m") {
+        font-size: 3.7rem;
+    }
+    @include mq("l") {
+        font-size: 4.3rem;
+    }
+    @include mq("xl") {
+        font-size: 5rem;
     }
 }
 

@@ -52,6 +52,15 @@ a:visited {
     }
 }
 
+.jsText::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    margin-left: 0.5rem;
+    border: 5px solid rgb(43, 43, 43);
+    animation: blink 1s infinite; 
+}
+
 // BURGER MENU SECTION
 
 #burgerMenuSection {
@@ -85,10 +94,6 @@ a:visited {
     background-color: $primaryColor;
     gap: 50px;
     transition: 0.4s;
-
-    // visibility: hidden;
-    // opacity: 0;
-    // transition: visibility 0s, opacity 0.3s linear;
 }
 
 #mobileBurgerButton {
