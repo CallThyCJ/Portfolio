@@ -270,17 +270,26 @@
 
     <div id="contactRightSection">
 
-            <form id="contactForm">
+            <form onsubmit="return validate()" id="contactForm">
                 <div id="formRow">
-                    <input type="text" placeholder="First Name*">
-                    <input type="text" placeholder="Last Name*">
+                    <input type="text" placeholder="First Name*" id="formFirstName">
+                    <div class="invalidWarning" id="invalidFirstName">
+
+                    </div>
+                    <input type="text" placeholder="Last Name*" id="formLastName">
+                    <div class="invalidWarning" id="invalidLastName">
+
+                    </div>
                 </div>
 
                 <div id="formColumn">
-                    <input type="text" placeholder="Email Address*">
+                    <input type="text" placeholder="Email Address*" id="formEmail">
+                    <div class="invalidWarning" id="invalidEmail">
+
+                    </div>
                     <input type="text" placeholder="Subject">
                     <textarea name="message" id="messageBox" placeholder="Message"></textarea>
-                    <button id="formSubmit">Submit</button>
+                    <button id="formSubmit" type="submit">Submit</button>
                 </div>
             </form>    
 
@@ -300,6 +309,7 @@
 
 <script src="JS/textScroll.js"></script>
 <script src="JS/hamburgerMenu.js"></script>
+<script src="JS/validation.js"></script>
 
 </body>
 </html>
