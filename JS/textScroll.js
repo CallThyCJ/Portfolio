@@ -3,7 +3,7 @@ const titles = ["Web Developer", "Software Developer", "Code Enjoyer"];
 let sleepTime = 100;
 let currentWord;
 let currentTitleIndex = 0;
-const currentPage = window.location.pathname + window.location.search;;
+const currentPage = window.location.pathname + window.location.search;
 
 // If JS is working then get rid of HTML title
 document.querySelector(".htmlText").style.display = "none";
@@ -44,7 +44,7 @@ const writeLoop = async () => {
 };
 
 // Start the effect based on the page
-if (currentPage.endsWith("index.html") || currentPage === "/") {
+if (currentPage === "/" || currentPage.endsWith("index.html") ) {
     writeLoop();
     } else if (currentPage.includes("about-me.html")) {
         const runAboutMeEffect = async () => {
