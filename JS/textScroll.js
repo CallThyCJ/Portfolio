@@ -44,7 +44,7 @@ const writeLoop = async () => {
 };
 
 // Start the effect based on the page
-if (window == window.location.origin || currentPage.endsWith("index.html") ) {
+if (currentPage === "/" || currentPage.endsWith("index.html") ) {
     writeLoop();
     } else if (currentPage.includes("about-me.html")) {
         const runAboutMeEffect = async () => {
