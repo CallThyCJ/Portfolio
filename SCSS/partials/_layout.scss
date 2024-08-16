@@ -272,6 +272,9 @@ a:visited {
 }
 
 #contactContainer {
+    // @include mq("m") {
+    //     width: 708.41px;
+    // }
     @include mq("l") {
         display: flex;
     }
@@ -289,6 +292,10 @@ a:visited {
 }
 
 #contactRightSection {
+    // @include mq("m") {
+    //     width: 100%;
+    //     margin: auto;
+    // }
     @include mq("l") {
         width: 60%;
         padding-top: 170px;
@@ -315,9 +322,16 @@ a:visited {
     gap: 20px;
     margin-bottom: 20px;
     @include mq("m") {
-        flex-direction: row;
-        gap: 20px;
-        justify-content: center;
+        // flex-direction: row;
+        // justify-content: center;
+        display: grid;
+        column-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80% auto;
+        grid-template-areas:
+        "inputFirstName inputLastName"
+        "invalidFirstName invalidLastName";
+        margin-bottom: 4%;
     }
 }
 

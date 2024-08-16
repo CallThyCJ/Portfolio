@@ -175,12 +175,40 @@ input {
         width: 80%;
     }
     @include mq("m") {
-        width: 44%;
+        width: 90%;
     }
     @include mq("l") {
-        width: 45%;
+        width: 88%;
         height: 100px;
     }
+    @include mq("xl") {
+        width: 90%;
+    }
+}
+
+#formFirstName {
+    grid-area: inputFirstName;
+    @include mq("m") {
+        margin-left: 3%;
+    }
+    @include mq("m") {
+        margin-left: 0;
+    }
+    @include mq("xl") {
+        margin-left: 2%;
+    }
+}
+
+#formLastName {
+    grid-area: inputLastName;
+}
+
+#invalidFirstName {
+    grid-area: invalidFirstName;
+}
+
+#invalidLastName {
+    grid-area: invalidLastName;
 }
 
 #messageBox {
@@ -206,6 +234,9 @@ input {
     margin-left: 20%;
     width: 100%;
     color: red;
+    @include mq("m") {
+        margin-left: 5%;
+    }
 }
 
 #formSubmit {

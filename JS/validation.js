@@ -18,7 +18,7 @@ function invalid () {
         invalidLastName.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Please enter your last name';
     }
 
-    if (email.value == "" || != email.value.includes(emailRegex)); {
+    if (email.value == "" || !emailRegex.test(email.value)) {
         email.style.borderColor = "red";
         const invalidEmail = document.getElementById("invalidEmail");
         invalidEmail.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email';
