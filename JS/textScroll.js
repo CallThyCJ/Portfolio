@@ -3,7 +3,7 @@ const titles = ["Web Developer", "Software Developer", "Code Enjoyer"];
 let sleepTime = 100;
 let currentWord;
 let currentTitleIndex = 0;
-const currentPage = window.location.pathname;
+const currentPage = window.location.pathname + window.location.search;;
 
 // If JS is working then get rid of HTML title
 document.querySelector(".htmlText").style.display = "none";
