@@ -195,7 +195,10 @@ input {
         margin-left: 0;
     }
     @include mq("xl") {
-        margin-left: 2%;
+        margin-left: 3%;
+    }
+    @include mq("xl") {
+        margin-left: 3.5%;
     }
 }
 
