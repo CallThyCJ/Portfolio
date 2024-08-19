@@ -286,8 +286,14 @@ input {
     font-size: 1.3rem;
 
     @include mq("l") { 
+        font-size: 1.6rem;
+    }
+    @include mq("xl") { 
         font-size: 1.8rem;
     }
+    @media only screen and (min-width: 1779px) {
+        font-size: 2.2rem;
+      }
 }
 
 

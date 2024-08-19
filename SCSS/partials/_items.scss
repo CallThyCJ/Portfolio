@@ -270,16 +270,13 @@ input {
 
 .title {
     text-align: center;
-    margin-bottom: 15%;
-    @include mq("l") {
+    margin-bottom: 13%;
+    @include mq("m") {
         margin-bottom: 8%;
     }
 }
 
-#scsContainer p {
-    background-color: $primaryColor;
-    border-radius: 10px;
-    border: solid 3px $tertiaryColor;
-    padding: 15px;
-    margin-top: 0px;
-}
+.scsItemTopSection img {
+    height: 100px;
+    width: 100px;
+} 

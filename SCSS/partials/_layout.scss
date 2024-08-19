@@ -418,9 +418,131 @@ a:visited {
     }
 }
 
+#scsIntro {
+    display: flex;
+    flex-direction: column;
+    @include mq("s") {
+        margin-bottom: 50px;
+    } 
+    @include mq("m") {
+        margin-bottom: 70px;
+    } 
+    @include mq("l") {
+        margin-bottom: 140px;
+    } 
+}
+
 #scsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 50px;
+    @include mq("xl") {
+        gap: 120px;
+    }
+}
+
+#scsInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @include mq("l") {
+        flex-direction: row;
+    }
+}
+
+.scsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq("m") {
+        flex-direction: row;
+        height: 329.13px;
+    }
+    @include mq("l") {
+        flex-direction: column;
+        height: 800px;
+    }
+}
+
+.scsItemTopSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    @include mq("m") {
+        height: 100%;
+    }
+    @include mq("l") {
+        height: 20%;
+    }
+}
+
+#treehouse .scsItemTopSection {
+    background-color: $treehouseColor;
+    @include mq("m") {
+        border-top: solid 3px $treehouseColor;
+        border-bottom: solid 3px $treehouseColor;
+    }
+    @include mq("l") {
+        order: 0;
+        border: none;
+    }
+}
+
+#netmatters .scsItemTopSection {
+    background-color: $netmattersColor;
+    @include mq("m") {
+        order: 2;
+        border-top: solid 3px $netmattersColor;
+        border-bottom: solid 3px $netmattersColor;
+    }
+    @include mq("l") {
+        order: 0;
+        border: none;
+    }
+}
+
+.scsItemBottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 9px;
+    padding-right: 9px;
+    @include mq("m") {
+        height: 100%;
+    }
+    @include mq("l") {
+        height: 80%;
+    }
+}
+
+#treehouse .scsItemBottomSection {
+    border-right: solid 3px $treehouseColor;
+    border-left: solid 3px $treehouseColor;
+    border-bottom: solid 3px $treehouseColor;
+    @include mq("m") {
+        border-left: none;
+        border-top: solid 3px $treehouseColor;
+    }
+    @include mq("l") {
+        border-left: solid 3px $treehouseColor;
+        border-top: none;
+    }
+}
+
+#netmatters .scsItemBottomSection {
+    border-right: solid 3px $netmattersColor;
+    border-left: solid 3px $netmattersColor;
+    border-bottom: solid 3px $netmattersColor;
+    @include mq("m") {
+        border-right: none;
+        border-top: solid 3px $netmattersColor;
+    }
+    @include mq("l") {
+        border-right: solid 3px $netmattersColor;
+        border-top: none;
+    }
 }
