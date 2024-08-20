@@ -372,8 +372,76 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+    width: 250px;
+    @include mq("m") {
+        width: 700px;
+        gap: 60px;
+    }
+    @include mq("l") {
+        width: 780px;
+    }
+    @include mq("xl") {
+        width: 1000px;
+    }
+    @media only screen and (min-width: 1779px) {
+        width: 1400px;
+    }
+}
+
+#aboutMeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include mq("m") {
+        flex-direction: row;
+    }
+}
+
+#aboutMeDes {
     width: 100%;
-    gap: 60px;
+    @include mq("m") {
+        width: 80%;
+    }
+    @include mq("xl") {
+        width: 85%;
+    }
+}
+
+#aboutMeSkills {
+    width: 100%;
+    border-top: solid 3px $primaryColor;
+    @include mq("m") {
+        width: 20%;
+        border-top: none;
+        border-left: solid 3px $primaryColor;
+        padding-left: 30px;
+    }
+    @include mq("xl") {
+        width: 15%;
+    }
+}
+
+#skillsList {
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutMeSkills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#aboutMeSkills img {
+    height: 25px;
+    width: 25px;
+    margin-right: 73px;
+    @include mq("m") {
+        margin-right: 13px;
+    }
 }
 
 #aboutMeUnderline {

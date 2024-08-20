@@ -252,8 +252,15 @@ input {
 }
 
 #aboutMeContainer p {
+    font-size: 1rem;
+    @include mq("m") { 
         font-size: 1.4rem;
+    }
 
+}
+
+.fa-brands {
+    font-size: 1.75rem;
 }
 
 // CODING EXAMPLES SECTION
