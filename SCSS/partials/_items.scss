@@ -271,6 +271,23 @@ input {
     }
 }
 
+li:nth-of-type(4) i {
+    margin-right: 62px;
+
+    @include mq("m") {
+            margin-right: 4px;
+    }
+}
+
+li:nth-of-type(5) i {
+    margin-right: 73px;
+    font-size: 1.75rem;
+
+    @include mq("m") {
+            margin-right: 14px;
+    }
+}
+
 .fa-sass {
     margin-right: 63px;
     @include mq("m") {
