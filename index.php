@@ -184,22 +184,22 @@
 
             <form onsubmit="return validate()" id="contactForm">
                 <div id="formRow">
-                    <input type="text" placeholder="First Name*" id="formFirstName">
+                    <input type="text" name="firstName" placeholder="First Name*" id="formFirstName">
                     <div class="invalidWarning" id="invalidFirstName">
                         
                     </div>
-                    <input type="text" placeholder="Last Name*" id="formLastName">
+                    <input type="text" name="lastName" placeholder="Last Name*" id="formLastName">
                     <div class="invalidWarning" id="invalidLastName">
 
                     </div>
                 </div>
 
                 <div id="formColumn">
-                    <input type="text" placeholder="Email Address*" id="formEmail">
+                    <input type="text" name="email" placeholder="Email Address*" id="formEmail">
                     <div class="invalidWarning" id="invalidEmail">
 
                     </div>
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="subject" placeholder="Subject">
                     <textarea name="message" id="messageBox" placeholder="Message"></textarea>
                     <button id="formSubmit" type="submit">Submit</button>
                 </div>
