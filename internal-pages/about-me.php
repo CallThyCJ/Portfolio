@@ -14,115 +14,62 @@
 
     <div class="transition transition3 isActive"></div>
 
-<!-- HERO IMAGE SECTION -->
+    <!-- HERO IMAGE SECTION -->
 
-<header>
+    <?php
 
-   <div id="pageWrap">
+            $title = "About Me";   
+            include "../PHP/Includes/heroImage.php"
 
-    <div id="heroSection">
-        <div id="heroContainer">
+    ?>
 
-                <img src="../Assets/heroImage.png" alt="laptop on desk image" id="heroImage">
 
-                    <div id="heroMainText">
-                        <h1 id="firstName">C&#233;lestin</h1>
-                        <h1 id="lastName">Jacobs</h1>
-                        <h2 class="htmlText">About Me</h2>
-                        <h2 class="jsText"></h2>
-                        <h4>Scroll Down</h4>
-                        <i class="fa-solid fa-angle-down fa-3x" id="arrowDown"></i>
-                    </div>
-        </div>
-    </div>
-
-</header>
-
-<!-- BURGER MENU SECTION -->
+    <!-- BURGER MENU SECTION -->
  
-<Div id="burgerMenuSection">
+    <Div id="burgerMenuSection">
 
-    <div id="burgerMenu">
-        <button id="burgerButton">
-            <i class="fa-solid fa-bars fa-2x" id="menuBars"></i>
-        </button>
-    </div>
+        <div id="burgerMenu">
+            <button id="burgerButton">
+                <i class="fa-solid fa-bars fa-2x" id="menuBars"></i>
+            </button>
+        </div>
 
-    <nav id="mobileNavBar">
-        <button id="mobileBurgerButton">
-            <i class="fa-solid fa-bars fa-2x" id="mobileMenuBars"></i>
-        </button>
+        <nav id="mobileNavBar">
+            <button id="mobileBurgerButton">
+                <i class="fa-solid fa-bars fa-2x" id="mobileMenuBars"></i>
+            </button>
 
-        <a href="../internal-pages/about-me.html">
-            <H3>About Me</H3>
-        </a>
+            <a href="../internal-pages/about-me.html">
+                <H3>About Me</H3>
+            </a>
 
-        <a href="../index.html#projectsSection">
-            <H3>My Portfolio</H3>
-        </a>
+            <a href="../index.html#projectsSection">
+                <H3>My Portfolio</H3>
+            </a>
 
-        <a href="../internal-pages/code-examples.html">
-            <H3>Coding Examples</H3>
-        </a>
+            <a href="../internal-pages/code-examples.html">
+                <H3>Coding Examples</H3>
+            </a>
 
-        <a href="../internal-pages/scs.html" class="lastNavItem">
-            <H3>SCS Scheme</H3>
-        </a>
+            <a href="../internal-pages/scs.html" class="lastNavItem">
+                <H3>SCS Scheme</H3>
+            </a>
 
-        <a href="../index.html#contactSection" class="lastNavItem">
-            <H3>Contact Me</H3>
-        </a>
-    </nav>
+            <a href="../index.html#contactSection" class="lastNavItem">
+                <H3>Contact Me</H3>
+            </a>
+        </nav>
 
 
-</Div>
+    </Div>
 
-<!-- SIDE NAV BAR SECTION -->
+    <!-- Navigation -->
 
-<div id="sideNavBarSection">
-    
-    <div id="sNavBarTopSection">
-        <a href="../index.html#heroSection" id="initals">
-            <h2>C</h2>
-            <H2>J</H2>
-        </a>
-    </div>
-    
-    <div id="sNavBarMidSection">
-        <a href="../internal-pages/about-me.html">
-            <H3>About Me</H3>
-            <div class="underline" id="sidebarUnderline">
-            </div>
-        </a>
+    <?php
 
-        <a href="../index.html#projectsSection">
-            <H3>My Portfolio</H3>
-            <div class="underline" id="sidebarUnderline">
-            </div>
-        </a>
+        include "../PHP/Includes/navigation.php"
 
-        <a href="../internal-pages/code-examples.html">
-            <H3>Coding Examples</H3>
-            <div class="underline" id="sidebarUnderline">
-            </div>
-        </a>
-
-        <a href="../internal-pages/scs.html" class="lastNavItem">
-            <H3>SCS Scheme</H3>
-            <div class="underline" id="sidebarUnderline">
-            </div>
-        </a>
-    </div>
-
-    <div id="sNavBarBottomSection">
-        <a href="../index.html#contactSection" class="lastNavItem">
-            <H3>Contact Me</H3>
-            <div class="underline" id="sidebarUnderline">
-            </div>
-        </a>
-    </div>
-
-</div>
+    ?>
 
 <!-- About Me Section -->
 

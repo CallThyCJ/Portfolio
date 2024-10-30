@@ -44,19 +44,19 @@ const writeLoop = async () => {
 };
 
 // Start the effect based on the page
-if (currentPage === "/" || currentPage === "/Portfolio/" || currentPage.endsWith("index.html") ) {
+if (currentPage === "/" || currentPage === "/Portfolio/" || currentPage.endsWith("index.php") ) {
     writeLoop();
-    } else if (currentPage.includes("about-me.html")) {
+    } else if (currentPage.includes("about-me.php")) {
         const runAboutMeEffect = async () => {
             await typeWriterEffect("About Me");
         };
     runAboutMeEffect();
-    } else if (currentPage.includes("code-examples.html")) {
+    } else if (currentPage.includes("code-examples.php")) {
         const runCodeEGEffect = async () => {
             await typeWriterEffect("Code Examples");
         };
     runCodeEGEffect();
-    } else if (currentPage.includes("scs.html")) {
+    } else if (currentPage.includes("scs.php")) {
         const runScsEffect = async () => {
             await typeWriterEffect("SCS Scheme");
         };
