@@ -1,15 +1,10 @@
 <?php
 
     include "../Includes/dbConnection.php";
-    require __DIR__ . "/../../vendor/autoload.php";
-
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
 
     header('Content-Type: application/json');
 
     $response = [];
-
     $errors = [];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -61,38 +56,6 @@
                 if ($statement->execute()) {
                     $response['status'] = 'success';
                     $response['message'] = 'New email was stored successfully';
-
-                    // // USE PHP MAILER TO SEND COPY VIA SMTP
-                    // $mail = new PHPMailer(true);
-                    // $mail->isSMTP();
-                    // $mail->Host = "smtp.gmail.com";
-                    // $mail->SMTPAuth = true;
-                    // $mail->Username = "celestinjacobss@gmail.com";
-                    // $mail->SMTP_Password = "vtyx dxvh bhbv rlyf";
-                    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                    // $mail->Port = 587;
-
-                    // // SET THE EMAIL CONTENT
-                    // $mail->setFrom($email, $firstName);
-                    // $mail->addAddress("celestinjacobss@gmail.com", 'Your Name');
-                    // $mail->isHTML(true);
-                    // $mail->Subject = 'New Message from Contact Form';
-                    // $mail->Body = "
-                    //     <h2>New Message Details</h2>
-                    //     <p><strong>First Name:</strong> $firstName</p>
-                    //     <p><strong>Last Name:</strong> $lastName</p>
-                    //     <p><strong>Email:</strong> $email</p>
-                    //     <p><strong>Subject:</strong> $subject</p>
-                    //     <p><strong>Message:</strong><br>$message</p>
-                    // ";
-
-                    // // SEND THE EMAIL
-                    // if ($mail->send()) {
-                    //     $response['email_status'] = 'Email sent successfully';
-                    // } else {
-                    //     $response['email_status'] = 'Failed to send email' . $mail->ErrorInfo;
-                    // }
-
                 } else {
                     $response['status'] = 'error';
                     $response['message'] = 'Database error: ' . implode(", ", $statement->errorInfo());
