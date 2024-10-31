@@ -182,26 +182,30 @@
 
     <div id="contactRightSection">
 
-            <form onsubmit="return validate()" id="contactForm">
+            <form action="PHP/Functionality/sendMessage.php" method="POST" id="contactForm">
+                <div id="submitSuccess" class="">
+                    <p>Message has successfully been sent</p>
+                </div>
+                
                 <div id="formRow">
-                    <input type="text" name="firstName" placeholder="First Name*" id="formFirstName">
+                    <input type="text" name="firstName" placeholder="First Name*" id="formFirstName" class="formInput">
                     <div class="invalidWarning" id="invalidFirstName">
                         
                     </div>
-                    <input type="text" name="lastName" placeholder="Last Name*" id="formLastName">
+                    <input type="text" name="lastName" placeholder="Last Name*" id="formLastName" class="formInput">
                     <div class="invalidWarning" id="invalidLastName">
 
                     </div>
                 </div>
 
                 <div id="formColumn">
-                    <input type="text" name="email" placeholder="Email Address*" id="formEmail">
+                    <input type="text" name="email" placeholder="Email Address*" id="formEmail" class="formInput">
                     <div class="invalidWarning" id="invalidEmail">
 
                     </div>
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" id="messageBox" placeholder="Message"></textarea>
-                    <button id="formSubmit" type="submit">Submit</button>
+                    <input type="text" name="subject" placeholder="Subject" class="formInput">
+                    <textarea name="message" id="messageBox" placeholder="Message" class="formInput">Hello, I'm interested in discussing an opportunity with you.</textarea>
+                    <button id="formSubmit" type="submit" name="submit">Submit</button>
                 </div>
             </form>    
 
@@ -223,6 +227,7 @@
 <script src="JS/hamburgerMenu.js"></script>
 <script src="JS/validation.js"></script>
 <script src="JS/transition.js"></script>
+<script src="JS/formSubmission.js"></script>
 
 </body>
 </html>

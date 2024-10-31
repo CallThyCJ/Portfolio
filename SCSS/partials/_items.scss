@@ -157,6 +157,13 @@ input {
     border-color: $tertiaryColor;
     border-radius: 15px;
     border-width: 4px;
+
+    &.error {
+        border-color: red;
+    }
+    &.success {
+        border-color: green;
+    }
     @include mq("s") {
         width: 80%;
     }
@@ -222,6 +229,13 @@ input {
     border-color: $tertiaryColor;
     border-radius: 15px;
     border-width: 4px;
+
+    &.error {
+        border-color: red;
+    }
+    &.success {
+        border-color: green;
+    }
     @include mq("s") {
         width: 80%;
     }
@@ -248,6 +262,10 @@ input {
     background-color: $primaryColor;
     border: solid 3px $tertiaryColor;
     border-radius: 8px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 #backToTop h4 {

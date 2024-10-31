@@ -315,6 +315,25 @@ a:visited {
     flex-direction: column;
 }
 
+#submitSuccess {
+    display: none;
+    height: 35px;
+    background-color: #bbffa1;
+    margin-bottom: 20px;
+
+    p {
+        margin-top: 0;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.7rem;
+        color: #228B22;
+    }
+
+    &.success {
+        display: block;
+    }
+}
+
 #formRow {
     display: flex;
     flex-direction: column;
