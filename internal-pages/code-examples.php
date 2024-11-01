@@ -36,7 +36,20 @@
 <div id="codeExamplesSection">
 
     <div id="codeExamplesContainer">
-        <h2>COMING SOON!</h2>
+        <div class="exampleContainer">
+            <div class="exampleTitle">
+                <h3>Vanilla Javascript Image Slider</h3>
+            </div>
+
+            <div class="exampleImage">
+                <img src="../Assets/codeExample1.PNG" alt="Code Example">
+            </div>
+
+            <div class="exampleDescription">
+                <p>This is an image slider I created with pure Vanilla Javascript. It can handle any number of images and includes functionality for clickable buttons that displays the corresponding image in the array.</p>
+            </div>
+
+        </div>
     </div>
 
     <div id="backToTop">

@@ -486,9 +486,36 @@ a:visited {
 
 #codeExamplesContainer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
+
+    .exampleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+
+        .exampleImage {
+            height: 300px;
+            width: 100%;
+            
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .exampleDescription {
+            background-color: $primaryColor;
+            color: #3B2F2F;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
 }
 
 // SCS SECTION
