@@ -289,7 +289,7 @@ input {
     }
 }
 
-#scsSection p {
+#scsSection p, .scsItemBottomSection ul li {
     font-size: 1.3rem;
 
     @include mq("l") { 

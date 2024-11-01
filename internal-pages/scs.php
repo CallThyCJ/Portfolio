@@ -60,7 +60,16 @@
             </div>
             <div class="scsItemBottomSection">
                 <h3>About Netmatters</h3>
-                <p>Established in 2008 Norfolk's leading technology company Winner of the Princess Royal Training Award Winner of EDP Skills of Tomorrow Award 80+ staff, 2 locations across Norfolk Digital Marketing, Website & Software development & IT Support Broad spectrum of clients, working nationwide Operate to strict company values</p>
+                <ul>
+                    <li>Established in 2008</li>
+                    <li>Norfolk's leading technology company</li>
+                    <li>Winner of the Princess Royal Training Award</li>
+                    <li>Winner of EDP Skills of Tomorrow Award</li>
+                    <li>80+ staff, 2 locations across Norfolk</li>
+                    <li>Digital Marketing, Website & Software development & IT Support</li>
+                    <li>Broad spectrum of clients, working nationwide</li>
+                    <li>Operate to strict company values</li>
+                </ul>
             </div>  
         </div>
         </div>
