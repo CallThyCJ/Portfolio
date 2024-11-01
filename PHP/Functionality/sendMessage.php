@@ -73,17 +73,17 @@
                         $mail->isSMTP();
                         $mail->Host = "sandbox.smtp.mailtrap.io";
                         $mail->SMTPAuth = true;
-                        $mail->Username = "fa57c4a179a64a"; // Your Mailtrap username
-                        $mail->Password = "3438105b72dfed"; // Your Mailtrap password
+                        $mail->Username = $_ENV["SMTP_Username"]; // Your Mailtrap username
+                        $mail->Password = $_ENV["SMTP_Password"]; // Your Mailtrap password
                         $mail->AuthType = 'LOGIN';
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use STARTTLS
                         $mail->Port = 2525; // Port number
 
                         // SET THE EMAIL CONTENT
-                        $mail->setFrom("cjstone9999@gmail.com");
-                        $mail->addAddress($email);
+                        $mail->setFrom($email);
+                        $mail->addAddress($_ENV["SMTP_Email"]);
                         $mail->isHTML(true);
-                        $mail->Subject = 'New Message from Contact Form :' . $subject;
+                        $mail->Subject = 'New Message from Contact Form -' . $subject;
                         $mail->Body = "
                             <html>
                             <h2>New Message Details</h2>
