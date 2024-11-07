@@ -499,11 +499,28 @@ a:visited {
         .exampleImage {
             height: 300px;
             width: 100%;
+
+            &:hover {
+                cursor: pointer;
+            }
             
             img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+            }
+
+            &.active {
+                img {
+                    position: fixed;
+                    top: 50%;
+                    left: 57%;
+                    transform: translate(-50%, -50%);
+                    z-index: $z-index10;
+                    height: 1200px;
+                    width: 800px;
+                    object-fit: none;
+                }
             }
         }
 
@@ -515,6 +532,31 @@ a:visited {
                 text-align: center;
             }
         }
+    }
+}
+
+.exampleBackground {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+
+    .fa-xmark {
+        position: fixed;
+        top: 0;
+        right: 30px;
+        z-index: $z-index10;
+        font-size: 4rem;
+        color: white;
+    }
+
+    &.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: $z-index9;
     }
 }
 

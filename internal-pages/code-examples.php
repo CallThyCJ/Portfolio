@@ -14,6 +14,10 @@
 
     <div class="transition transition3 isActive"></div>
 
+    <div class="exampleBackground">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+
     <!-- HERO IMAGE SECTION -->
 
     <?php
