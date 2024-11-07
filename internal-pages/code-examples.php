@@ -15,7 +15,7 @@
     <div class="transition transition3 isActive"></div>
 
     <div class="exampleBackground">
-        <i class="fa-solid fa-xmark"></i>
+        <i class="fa-solid fa-xmark" id="exampleCloseButton"></i>
     </div>
 
     <!-- HERO IMAGE SECTION -->
@@ -68,6 +68,7 @@
 <script src="../JS/textScroll.js"></script>
 <script src="../JS/hamburgerMenu.js"></script>
 <script src="../JS/transition.js"></script>
+<script src="../JS/codeExamples.js"></script>
 
 </body>
 </html>

@@ -499,6 +499,7 @@ a:visited {
         .exampleImage {
             height: 300px;
             width: 100%;
+            background-color: $netmattersColor;
 
             &:hover {
                 cursor: pointer;
@@ -549,6 +550,10 @@ a:visited {
         z-index: $z-index10;
         font-size: 4rem;
         color: white;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &.active {
