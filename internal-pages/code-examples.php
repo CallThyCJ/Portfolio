@@ -41,7 +41,7 @@
 
     <div id="codeExamplesContainer">
 
-        <div class="exampleContainer">
+        <div class="exampleContainer canHover">
             <div class="exampleTitle">
                 <h3>Vanilla Javascript Image Slider</h3>
             </div>
@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <div class="exampleContainer">
+        <div class="exampleContainer canHover">
             <div class="exampleTitle">
                 <h3>PHP/SQL Database Integration</h3>
             </div>
@@ -69,7 +69,7 @@
             </div>
         </div>
 
-        <div class="exampleContainer">
+        <div class="exampleContainer canHover">
             <div class="exampleTitle">
                 <h3>PHP Contact Form with Validation</h3>
             </div>

@@ -56,7 +56,7 @@
             </div>
 
             <div class="projectBottomSection">
-                <h3>Netmatters Website</h3>
+                <h3>Netmatters Landing Page</h3>
                 <div class="projectFooter">
                     <a href="https://netmatters.celestin-jacobs.netmatters-scs.co.uk/"><h4>View Project </h4></a>
                     <i class="fa-solid fa-right-long fa-2x arrowRight"></i>
@@ -68,7 +68,8 @@
         <div class="projectItem" id="projectItem2">
 
             <div class="projectTopSection">
-                <img src="Assets/imageAssigner.png" alt="netmatters home page screenshot" class="projectImg">
+                <a href="https://js-array.celestin-jacobs.netmatters-scs.co.uk/">
+                <img src="Assets/imageAssigner.png" alt="Image Assigner screenshot" class="projectImg">
             </div>
 
             <div class="projectBottomSection">
@@ -84,13 +85,14 @@
         <div class="projectItem" id="projectItem3">
 
             <div class="projectTopSection">
-                <img src="Assets/placeholder.png" alt="netmatters home page screenshot" class="projectImg">
+                <a href="https://netmatters.celestin-jacobs.netmatters-scs.co.uk/PHP/Site%20Pages/contact-us.php">
+                <img src="Assets/NetmattersContactPage.png" alt="netmatters contact page screenshot" class="projectImg">
             </div>
 
             <div class="projectBottomSection">
-                <h3>Project 3</h3>
+                <h3>Netmatters Contact Page</h3>
                 <div class="projectFooter">
-                    <a href=""><h4>View Project </h4></a>
+                    <a href="https://netmatters.celestin-jacobs.netmatters-scs.co.uk/PHP/Site%20Pages/contact-us.php"><h4>View Project </h4></a>
                     <i class="fa-solid fa-right-long fa-2x arrowRight"></i>
                 </div>
             </div>
@@ -100,7 +102,7 @@
         <div class="projectItem" id="projectItem4">
 
             <div class="projectTopSection">
-                <img src="Assets/placeholder.png" alt="netmatters home page screenshot" class="projectImg">
+                <img src="Assets/placeholder.png" alt="placeholder image" class="projectImg">
             </div>
 
             <div class="projectBottomSection">
@@ -116,7 +118,7 @@
         <div class="projectItem" id="projectItem5">
 
             <div class="projectTopSection">
-                <img src="Assets/placeholder.png" alt="netmatters home page screenshot" class="projectImg">
+                <img src="Assets/placeholder.png" alt="[placeholder image" class="projectImg">
             </div>
 
             <div class="projectBottomSection">
