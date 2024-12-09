@@ -47,7 +47,7 @@
             </div>
 
             <div class="exampleImage">
-                <img src="../Assets/codeExample1.PNG" alt="Code Example">
+                <img src="../Assets/codeExample1.png" alt="Code Example">
             </div>
 
             <div class="exampleDescription">
@@ -80,6 +80,20 @@
 
             <div class="exampleDescription">
                 <p>Here I used PHP to connect to a database I made in SQL. Then using the Post method, I get all the information the user has entered into the form and filter it to make sure no code can be injected in the process. Then I run validation checks to ensure the user has entered all the required information before binding the data and attaching it to an SQL statement used to send the information to the database.</p>
+            </div>
+        </div>
+
+        <div class="exampleContainer canHover">
+            <div class="exampleTitle">
+                <h3>Laravel Log In/Out Functionality</h3>
+            </div>
+
+            <div class="exampleImage">
+                <img src="../Assets/codeExample4.png" alt="Code Example">
+            </div>
+
+            <div class="exampleDescription">
+                <p>Here I made use of Laravel's built in methods to validate and handle a user's session for both log in and log out.</p>
             </div>
         </div>
 

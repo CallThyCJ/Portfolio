@@ -51,7 +51,7 @@
            
             <div class="projectTopSection">
                 <a href="https://netmatters.celestin-jacobs.netmatters-scs.co.uk/">
-                    <img src="Assets/netmattersHomePage.PNG" alt="netmatters home page screenshot" class="projectImg">
+                    <img src="Assets/netmattersHomePage.png" alt="netmatters home page screenshot" class="projectImg">
                 </a>
             </div>
 
@@ -106,9 +106,9 @@
             </div>
 
             <div class="projectBottomSection">
-                <h3>Project 4</h3>
+                <h3>Laravel CRUD Project</h3>
                 <div class="projectFooter">
-                    <a href=""><h4>View Project </h4></a>
+                    <a href="http://laravel.celestin-jacobs.netmatters-scs.co.uk/"><h4>View Project </h4></a>
                     <i class="fa-solid fa-right-long fa-2x arrowRight"></i>
                 </div>
             </div>
